@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Course from "./course";
 
+
 const Courses = ({ handleCourseSelection }) => {
   const [courses, setCourses] = useState([]);
 

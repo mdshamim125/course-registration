@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Cart from "./components/Cart";
 import Courses from "./components/Courses";
+import Title from "./components/Title";
 
 export const totalCredits = 15;
 
@@ -28,7 +29,8 @@ function App() {
 
   return (
     <div className="p-4 bg-base-200">
-      <h1 className="text-3xl font-bold text-center">Course Registration</h1>
+      {/* <h1 className="text-3xl font-bold text-center">Course Registration</h1> */}
+      <Title></Title>
       <div className="grid grid-cols-12 my-4 gap-8">
         <div className="col-span-10">
           <Courses handleCourseSelection={handleCourseSelection} />
